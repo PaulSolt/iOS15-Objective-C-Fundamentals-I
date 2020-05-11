@@ -101,7 +101,8 @@
     // Objects (class-based types)
     //
     NSLog(@"---------------Objects---------------");
-    // NSString
+    // NSString = object
+    // Swift String = struct
     
     NSString *lambda = @"Lambda School";
     NSLog(@"%@", lambda);
@@ -110,7 +111,7 @@
     
     // Swift
     //let width = 94
-    //let label = "The wdith is \(width)"
+    //let label = "The width is \(width)"
     
     NSString *label = @"The width is";
     int width = 94;
@@ -119,11 +120,11 @@
     
     // id type used to store an object of any type
     // Swift
-    // let anyObject: Any = "Hello"
+    // let anyObject: AnyObject = "Hello"
     
     id mysteryObject = @"An NSString object";
     NSLog(@"%@", [mysteryObject description]);
-    mysteryObject = @{@"model": @"Ford", @"year": @1967};
+    mysteryObject = @{@"model": @"Ford", @"year": @1967}; // Swift ["key" : "value"]
     NSLog(@"%@", [mysteryObject description]);
     
     NSLog(@"---------------End Objects---------------");

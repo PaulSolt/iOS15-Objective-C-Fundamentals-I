@@ -8,10 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+// File naming
+// .h = header file
+// .m = implementation file (source)
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        NSLog(@"Hey Paul!");
     }
     return 0;
 }

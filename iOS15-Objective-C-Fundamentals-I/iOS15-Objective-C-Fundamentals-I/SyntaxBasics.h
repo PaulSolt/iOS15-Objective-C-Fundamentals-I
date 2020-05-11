@@ -46,6 +46,16 @@ NS_ASSUME_NONNULL_BEGIN // optionals in Swift
 
 - (instancetype)initWithLargeNumber:(NSNumber *)largeNumber smallNumber:(int)smallNumber;
 
+// Methods
+
+// Swift
+//func explorePrimitives() {
+//
+//}
+
+- (void)explorePrimitives;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

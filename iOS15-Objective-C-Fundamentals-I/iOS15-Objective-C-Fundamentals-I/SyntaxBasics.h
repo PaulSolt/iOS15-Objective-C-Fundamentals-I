@@ -54,7 +54,9 @@ NS_ASSUME_NONNULL_BEGIN // optionals in Swift
 //}
 
 - (void)explorePrimitives;
-
+- (void)exploreObjects;
+- (void)exploreCollectionsWithArray:(NSArray *)shipCaptains;
+- (void)exploreNumbers;
 
 @end
 

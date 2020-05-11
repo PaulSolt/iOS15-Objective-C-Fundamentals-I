@@ -40,6 +40,7 @@ int main(int argc, const char * argv[]) {
         [basics explorePrimitives]; // write ] last
 //        [basics explorePrimitives]; // write [] first
         
+        [basics exploreObjects];
     }
     return 0;
 }

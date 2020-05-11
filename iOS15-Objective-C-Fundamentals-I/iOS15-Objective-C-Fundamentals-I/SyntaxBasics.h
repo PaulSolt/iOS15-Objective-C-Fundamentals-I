@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN // optionals in Swift
 //    var smallNumber: Int  // 64-bit integer
 //}
 
+// Control + Command + Click
 
 @interface SyntaxBasics : NSObject
 
@@ -32,6 +33,18 @@ NS_ASSUME_NONNULL_BEGIN // optionals in Swift
 // @property (attributes) type variableName;
 @property NSNumber *largeNumber;    // Class or Object (star = pointer)
 @property int smallNumber;          // primitive data type (no star)
+
+// initializer
+
+// Swift
+//init(largeNumber: NSNumber, forSmallNumber smallNumber: Int) {
+//
+//}
+
+// -/+ = instance method / class method
+// - (returnType)initName:(ParameterType1)parameterName1 anotherLabel:(ParameterType2)parameterName2
+
+- (instancetype)initWithLargeNumber:(NSNumber *)largeNumber smallNumber:(int)smallNumber;
 
 @end
 

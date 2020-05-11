@@ -137,12 +137,20 @@
     NSLog(@"Serenity: %@", shipCaptains[0]);
     
     // Array comparison
-    NSArray *sameCaptains = @[@"Malcolm Reynolds", @"Jean-Luc Picard", @"James T. Kirk", @"Kathryn Janeway"];
+    NSArray *sameCaptains = @[@"Malcolm Reynolds", @"JJJean-Luc Picard", @"James T. Kirk", @"Kathryn Janeway"];
     if ([shipCaptains isEqualToArray:sameCaptains]) {
         NSLog(@"Arrays are equal!");
+    } else {
+        NSLog(@"Arrays are not equal!");
     }
     
     // for loop syntax for iterating a collection
+    // for (initial condition; end condition; increment/decrement)
+    // i++
+    // i = i + 1
+    // i--
+    // i = i - 1
+    // C++ = C + 1
     for (int i=0; i<shipCaptains.count; i++) {
         NSLog(@"Captain on the bridge: %@", shipCaptains[i]);
     }
@@ -165,6 +173,15 @@
         NSLog(@"Captain %@ was found at index %lu", shipCaptains[index], (unsigned long)index);
     }
     
+    // Swift
+    // let = constant = NSArray
+    //let pi = 3.14
+    // var = variable = NSMutableArray
+    //var myArray = [1, 2, 3]  // mutable Array in Swift
+
+    // NSArray = set once, and constant
+    // NSMutableArray = can add or remove elements
+    
     // Same as above NSArray type, except can be mutated
     // note: array literal syntax can't be used for NSMutableArray
     NSMutableArray *mutableShipCaptains = [[NSMutableArray alloc] initWithObjects:@"Malcolm Reynolds", @"James T. Kirk", nil];
@@ -177,11 +194,14 @@
     
     NSDictionary *occupations = @{@"Malcolm": @"Captain", @"Kaylee": @"Mechanic"};
     NSLog(@"%@", [occupations objectForKey:@"Malcolm"]);
+    NSLog(@"%@", occupations[@"Kaylee"]);
     
     // NSMutableDictionary - same as above, but can be mutated
     // note: dictionary literal syntax can't be used for NSMutableDictionary
     NSMutableDictionary *mutableOccupations = [occupations mutableCopy];
     [mutableOccupations setObject:@"Public Relations" forKey:@"Jayne"];
+    mutableOccupations[@"Jean-Luc Picard"] = @"Captain";
+    
     NSLog(@"%@", mutableOccupations);
     
     NSLog(@"---------------End Collections---------------");

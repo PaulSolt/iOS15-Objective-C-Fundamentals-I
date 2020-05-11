@@ -41,6 +41,17 @@ int main(int argc, const char * argv[]) {
 //        [basics explorePrimitives]; // write [] first
         
         [basics exploreObjects];
+        
+        
+        // Swift
+        //basics.exploreCollections(array: ["Malcolm Reynolds", "Jean-Luc Picard", "James T. Kirk", "Kathryn Janeway"])
+        
+        // @[]  // = empty array literal
+        [basics exploreCollectionsWithArray:@[@"Malcolm Reynolds",
+                                              @"Jean-Luc Picard",
+                                              @"James T. Kirk",
+                                              @"Kathryn Janeway"]];
+
     }
     return 0;
 }
